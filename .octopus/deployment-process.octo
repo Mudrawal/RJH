@@ -2,19 +2,19 @@ process {
     Id = "deploymentprocess-Projects-2"
     OwnerId = "Projects-2"
     IsFrozen = false
-    Version = 1
+    Version = 2
     SpaceId = "Spaces-1"
     Steps {
-        run_a_script {
+        run_a_scriptabc {
             Id = "53d4a399-87a1-4778-94b6-0bf6115d42e0"
-            Name = "Run a Script"
+            Name = "Run a Scriptabc"
             Condition = "Success"
             StartTrigger = "StartAfterPrevious"
             PackageRequirement = "LetOctopusDecide"
             Actions {
-                run_a_script {
+                run_a_scriptabc {
                     Id = "cd84d52d-1617-4f48-af20-b81cdb028b78"
-                    Name = "Run a Script"
+                    Name = "Run a Scriptabc"
                     ActionType = "Octopus.Script"
                     Container {
                     }
